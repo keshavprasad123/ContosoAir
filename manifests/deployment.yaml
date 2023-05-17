@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: keshaptest2
+  name: TEST5
   labels:
-    app: keshaptest2
-  namespace: namespace-workflow-1679363538506
+    app: TEST5
+  namespace: namespace-workflow-1684286869611
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: keshaptest2
+      app: TEST5
   template:
     metadata:
       labels:
-        app: keshaptest2
+        app: TEST5
     spec:
       containers:
-        - name: keshaptest2
-          image: acrworkflow1679363538506.azurecr.io/image-workflow-1679363538506:latest
+        - name: TEST5
+          image: acrworkflow1684286869611.azurecr.io/image-workflow-1684286869611:latest
           ports:
             - containerPort: 3000
